@@ -1,0 +1,63 @@
+.create-campaign {
+    &__stepper {
+        display: flex;
+
+        margin-top: 56px;
+        margin-bottom: 72px;
+    }
+
+    &__card {
+        border-radius: 8px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 21px;
+
+        border: 1px solid $gray;
+
+        width: 211px;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: $dark-gray;
+        
+        &--add {
+            width: 100%;
+            background-color: $light-gray;
+            padding-bottom: 30px;
+            border-color: transparent;
+            margin-bottom: 16px;
+            margin-top: 48px;
+
+            img {
+                margin-bottom: 10px;
+                margin-top: -35px;
+            }
+        }
+    }
+
+    &__next {
+        margin: 56px auto 0;
+    }
+}
+
+.stepper {
+    &__item {
+        background-color: $thin-gray;
+        border-radius: 100px;
+        height: 12px;
+        width: 202px;
+
+        &--active {
+            background: linear-gradient(180deg, #E79FFF 0%, #C64AF1 99.99%);
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 32px;
+        }
+    }
+}
