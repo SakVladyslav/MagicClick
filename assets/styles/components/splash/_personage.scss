@@ -1,0 +1,26 @@
+.personage {
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    
+    &__text {
+        position: relative;
+        max-width: 166px;
+
+        margin-bottom: 37px;
+        margin-left: auto;
+
+        span {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 140%;
+            
+            max-width: 126px;
+            display: inline-block;
+
+            position: absolute;
+            top: 37px;
+            left: 20px;
+        }
+    }
+}

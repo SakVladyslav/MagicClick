@@ -1,0 +1,65 @@
+.authorization {
+    &__form {
+        margin-top: 48px;
+    }
+
+    &__line {
+        display: flex;
+        flex-direction: row;
+        margin: 44px;
+
+        &:before,
+        &:after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 1px solid $gray;
+            margin: auto;
+            width: 237px;
+        }
+
+        &:before {
+            margin-right: 16px;
+        }
+
+        &:after {
+            margin-left: 16px;
+        }
+    }
+
+    &__with {
+        display: flex;
+
+        .btn:first-child {
+            margin-right: 32px;
+        }
+    }
+
+    &__subtext {
+        color: $purple;
+        font-weight: 400;
+        line-height: 160%;
+        margin-top: 32px;
+    }
+
+    &__link {
+        color: $purple;
+
+        &:visited {
+            color: $purple;
+        }
+    }
+}
+
+.form {
+    &__inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px 32px;
+
+        margin-bottom: 32px;
+    }
+
+    .btn {
+        margin: 0 auto;
+    }
+}

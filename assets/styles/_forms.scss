@@ -1,0 +1,32 @@
+.form {
+    &__input {
+        padding: 16px;
+        outline: 0;
+        background-color: $light-gray;
+        border: 1px solid $thin-gray;
+        border-radius: 12px;
+
+        width: 320px;
+
+        &::placeholder {
+            color: $dark-gray;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+        }
+
+        &-password {
+            position: relative;
+
+            span {
+                background: url(assets/images/icons/Hide.svg) no-repeat center center;
+                width: 16px;
+                height: 16px;
+
+                position: absolute;
+                top: 16px;
+                right: 16px;
+            }
+        }
+    }
+}
