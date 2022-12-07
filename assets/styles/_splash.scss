@@ -1,0 +1,52 @@
+.splash {
+    font-family: 'Poppins';
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    
+    padding: 40px;
+
+    &__logo {
+        margin: 0 auto;
+    }
+
+    &__gradient {
+        position: absolute;
+        width: 576px;
+        height: 576px;
+        filter: blur(150px);
+
+        &--blue {
+            background-color: $gradient-blue;
+        }
+
+        &--brown {
+            background-color: $gradient-brown;
+        }
+
+        &--top-left {
+            left: -77px;
+            top: -288px;
+        }
+
+        &--top-right {
+            left: 985px;
+            top: -266px;
+        }
+
+        &--bottom-left {
+            left: -77px;
+            top: 560px;
+        }
+
+        &--bottom-right {
+            left: 1045px;
+            top: 500px;
+        }
+    }
+}
